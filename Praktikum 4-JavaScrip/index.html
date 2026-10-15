@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Profil | Zulfaqor</title>
+
+    <!-- Link CSS Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Link FontAwesome untuk Ikon Sosial Media -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- CSS Internal -->
+    <style>
+      /* Efek meluncur mulus saat menu diklik */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .hero-section {
+        padding: 120px 0 100px;
+        background-color: #f8f9fa;
+      }
+
+      .profile-img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border: 5px solid #ffffff;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      }
+
+      /* Jarak (padding) untuk setiap bagian konten */
+      .section-padding {
+        padding: 80px 0;
+      }
+    </style>
+  </head>
+  <body id="home">
+    <!-- NAVBAR -->
+    <!-- fixed-top memastikan navbar selalu di atas walau di-scroll -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">ProfilKu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">Tentang Saya</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Keahlian</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 1. HERO SECTION (Perkenalan) -->
+    <section class="hero-section text-center">
+      <div class="container">
+        <!-- Ganti dengan nama file foto kamu -->
+        <img src="images/foto gua.jpeg" alt="Foto Profil" class="rounded-circle profile-img mb-4" />
+
+        <h1 class="fw-bold">Halo, Saya Zulfaqor!</h1>
+        <p class="lead text-muted">Mahasiswa Sistem Informasi | Pengembang Web</p>
+
+        <a href="#about" class="btn btn-primary mt-3 px-4 py-2">Kenal Lebih Jauh</a>
+      </div>
+    </section>
+
+    <!-- 2. SECTION TENTANG SAYA -->
+    <!-- id="about" adalah tujuan lompatan dari menu navigasi -->
+    <section id="about" class="section-padding bg-white">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Tentang Saya</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card shadow-sm border-0">
+              <div class="card-body p-4 p-md-5">
+                <h4 class="card-title text-primary mb-3">Salam Kenal!</h4>
+                <!-- Bagian ini yang diubah -->
+                <h1 class="fw-bold">Halo, Saya Zulfaqor!</h1>
+                <p class="lead text-muted fs-4">Saya seorang <span id="efek-ngetik" class="text-primary fw-bold"></span></p>
+                <p class="card-text text-secondary" style="line-height: 1.8">
+                  Sehari-hari saya mendalami berbagai bahasa pemrograman dan *framework* terkini. Saya sangat menyukai proses problem-solving dalam coding dan selalu antusias untuk belajar hal-hal baru guna meningkatkan kualitas karya
+                  digital saya.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SECTION KEAHLIAN -->
+    <!-- id="skills" adalah tujuan lompatan dari menu navigasi -->
+    <section id="skills" class="section-padding bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Keahlian (Skills)</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="mb-4">
+              <label class="fw-bold mb-2">HTML & CSS</label>
+              <div class="progress" style="height: 25px">
+                <div class="progress-bar bg-success" style="width: 90%">90%</div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label class="fw-bold mb-2">Bootstrap 5 & Tailwind CSS</label>
+              <div class="progress" style="height: 25px">
+                <div class="progress-bar bg-info" style="width: 85%">85%</div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label class="fw-bold mb-2">JavaScript</label>
+              <div class="progress" style="height: 25px">
+                <div class="progress-bar bg-warning text-dark" style="width: 70%">70%</div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label class="fw-bold mb-2">Laravel (PHP)</label>
+              <div class="progress" style="height: 25px">
+                <div class="progress-bar bg-danger" style="width: 75%">75%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 4. SECTION KONTAK -->
+    <!-- id="contact" adalah tujuan lompatan dari menu navigasi -->
+    <section id="contact" class="section-padding bg-white">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Hubungi Saya</h2>
+
+        <!-- Menggunakan g-4 untuk memberi jarak antar kolom -->
+        <div class="row g-4 justify-content-center">
+          <!-- Bagian Kiri: Card Media Sosial -->
+          <div class="col-md-5">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body p-4 p-md-5">
+                <h4 class="card-title text-primary mb-4">Mari Terhubung</h4>
+                <p class="text-secondary mb-4">Jangan ragu untuk menghubungi saya melalui platform di bawah ini untuk berdiskusi atau menjalin kerja sama.</p>
+
+                <!-- Item WhatsApp -->
+                <div class="d-flex align-items-center mb-4">
+                  <i class="fa-brands fa-whatsapp text-success fs-1 me-3"></i>
+                  <div>
+                    <h6 class="mb-0 fw-bold">WhatsApp</h6>
+                    <small class="text-secondary">+62 812-3456-7890</small>
+                  </div>
+                </div>
+
+                <!-- Item Instagram -->
+                <div class="d-flex align-items-center mb-4">
+                  <i class="fa-brands fa-instagram text-danger fs-1 me-3"></i>
+                  <div>
+                    <h6 class="mb-0 fw-bold">Instagram</h6>
+                    <small class="text-secondary">@zulfaqor</small>
+                  </div>
+                </div>
+
+                <!-- Item GitHub -->
+                <div class="d-flex align-items-center">
+                  <i class="fa-brands fa-github text-dark fs-1 me-3"></i>
+                  <div>
+                    <h6 class="mb-0 fw-bold">GitHub</h6>
+                    <small class="text-secondary">github.com/zulfaqor</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bagian Kanan: Card Form Pesan -->
+          <div class="col-md-7">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body p-4 p-md-5">
+                <h4 class="card-title text-primary mb-4">Kirim Pesan</h4>
+                <form action="#">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label class="form-label fw-semibold">Nama Lengkap</label>
+                      <input type="text" class="form-control bg-light" placeholder="Masukkan nama Anda" />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label class="form-label fw-semibold">Email</label>
+                      <input type="email" class="form-control bg-light" placeholder="nama@email.com" />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold">Subjek</label>
+                    <input type="text" class="form-control bg-light" placeholder="Tujuan pesan Anda" />
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label fw-semibold">Pesan</label>
+                    <textarea class="form-control bg-light" rows="4" placeholder="Tuliskan pesan Anda di sini..."></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">Kirim Pesan Sekarang</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p class="mb-0">&copy; 2026 Zulfaqor. Dibuat untuk Tugas Pemrograman Web.</p>
+      </div>
+    </footer>
+
+      <!-- Script JS Bootstrap 5 -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Script JS Bootstrap 5 (Sudah ada sebelumnya) -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      
+      <!-- 1. Link library Typed.js -->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      
+      <!-- 2. Script untuk menjalankan animasinya -->
+      <script>
+          var animasiTeks = new Typed('#efek-ngetik', {
+              // Kamu bisa menambah atau mengubah kata-kata di dalam kurung siku ini
+              strings: [
+                  'Mahasiswa Sistem Informasi.', 
+                  'Pengembang Web.',
+                  'Designer UI/UX',
+                  'Pecinta Teknologi.'
+              ],
+              typeSpeed: 60,    // Kecepatan mengetik
+              backSpeed: 40,    // Kecepatan menghapus
+              backDelay: 1500,  // Jeda waktu sebelum tulisan dihapus (1.5 detik)
+              loop: true        // Agar animasinya berulang terus-menerus
+          });
+      </script>
+  </body>
+  </html>
+  </body>
+</html>
